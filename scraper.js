@@ -5,9 +5,16 @@ const { chromium } = require('playwright');
   const page = await browser.newPage();
 
   const urls = [
-    'https://example.com/page1',
-    'https://example.com/page2',
-    'https://example.com/page3'
+    'https://sanand0.github.io/tdsdata/js_table/?seed=42',
+    'https://sanand0.github.io/tdsdata/js_table/?seed=43',
+    'https://sanand0.github.io/tdsdata/js_table/?seed=44',
+    'https://sanand0.github.io/tdsdata/js_table/?seed=45',
+    'https://sanand0.github.io/tdsdata/js_table/?seed=46',
+    'https://sanand0.github.io/tdsdata/js_table/?seed=47',
+    'https://sanand0.github.io/tdsdata/js_table/?seed=48',
+    'https://sanand0.github.io/tdsdata/js_table/?seed=49',
+    'https://sanand0.github.io/tdsdata/js_table/?seed=50',
+    'https://sanand0.github.io/tdsdata/js_table/?seed=51',
   ];
 
   let total = 0;

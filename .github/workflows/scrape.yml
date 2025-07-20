@@ -1,0 +1,27 @@
+name: Scrape Numbers and Sum
+
+on:
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    name: Run Scraper with Email Step - 22f2000895@ds.study.iitm.ac.in
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+
+      - name: Run Scraper - 22f2000895@ds.study.iitm.ac.in
+        run: node scraper.js
